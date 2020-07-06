@@ -17,8 +17,8 @@ const Repository = ({ repoInfo, userID }) => {
   let forkWord = "fork";
 
   // check if count is multiple
-  if (starsCount === 0 && starsCount > 1) starWord += "s";
-  if (forksCount === 0 && starsCount > 1) forkWord += "s";
+  if (starsCount === 0 || starsCount > 1) starWord += "s";
+  if (forksCount === 0 || starsCount > 1) forkWord += "s";
 
   return (
     <section className="single-repo">

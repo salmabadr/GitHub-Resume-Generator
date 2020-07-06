@@ -7,6 +7,7 @@ const repoInfoReducer = (state = initialState.repos, action) => {
             if (action.data) {
                 let repos = action.data.map((repo) => {
                     return {
+                        fork: repo.fork,
                         ownerID: repo.owner.id,
                         // Get popularity of a repo by adding their forks and stars counts
                         popularity: repo.forks_count + repo.stargazers_count,
