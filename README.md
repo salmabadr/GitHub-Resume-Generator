@@ -52,3 +52,5 @@ In case it didn't, Open http://localhost:3000 to view it in the browser.
 - My CSS skills are not extensive, So I tried to stick to the design as much as I can.
 - The sketch file was not accurate in terms of font sizes, widths, heights, etc. Therefore I tried to produce to the design as faithfully as I could.
 - create-react-app was used to initialize this app.
+- My machine is Macbook, So I couldn't test the app on IE 11, But I added
+  it in the browserlist in Package.json and it should work (I guess).
